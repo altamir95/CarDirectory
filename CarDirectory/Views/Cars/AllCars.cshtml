@@ -1,0 +1,86 @@
+﻿
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Model</th>
+                <th scope="col">Number</th>
+                <th scope="col">Color</th>
+                <th scope="col">Year</th>
+                <th scope="col">First name</th>
+                <th scope="col">Last name</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+    <form class="m-5" name="carForm">
+        <input type="hidden" name="Id" value="0">
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="Brand">Brand</label>
+                <input type="text" class="form-control" id="Brand" name="Brand" maxlength="25">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="Model">Model</label>
+                <input type="text" class="form-control" id="Model" name="Model" maxlength="25">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="Number">Number</label>
+                <input type="text" class="form-control" id="Number" name="Number" maxlength="25">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="Color">Color</label>
+                <input type="text" class="form-control" id="Color" name="Color" maxlength="25">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="Year">Year</label>
+                <select class="form-control" id="Year" name="Year">
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="FirstName">First name</label>
+                <input type="text" class="form-control" name="FirstName" id="FirstName" maxlength="25">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="LastName">Last name</label>
+                <input type="text" class="form-control" id="LastName" name="LastName" maxlength="25">
+            </div>
+        </div>
+
+
+
+        <input type="submit" class="btn btn-primary" value="Отправить">
+
+
+
+    </form>
+
+    <!-- <form class="" name="carFormPut" id="carFormPut"></form> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- My code -->
+    <script src="/js/my_js_code.js"></script>
+    <script>
+        GetCars();
+    </script>
